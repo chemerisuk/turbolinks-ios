@@ -35,7 +35,6 @@ class WebView: WKWebView {
         configuration.userContentController.add(self, name: "turbolinks")
 
         translatesAutoresizingMaskIntoConstraints = false
-        scrollView.decelerationRate = UIScrollView.DecelerationRate.normal
         
         if #available(iOS 11, *) {
             scrollView.contentInsetAdjustmentBehavior = .never
